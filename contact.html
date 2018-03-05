@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact | Joseph N Tascona Law Firm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for more information, and we will do our best to respond as soon as possible.">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function _(id){ return document.getElementById(id); }
+      function submitForm(){
+      	_("mybtn").disabled = true;
+      	_("status").innerHTML = 'please wait ...';
+      	var formdata = new FormData();
+      	formdata.append( "n", _("n").value );
+      	formdata.append( "e", _("e").value );
+        formdata.append( "s", _("s").value );
+      	formdata.append( "m", _("m").value );
+      	var ajax = new XMLHttpRequest();
+      	ajax.open( "POST", "parser.php" );
+      	ajax.onreadystatechange = function() {
+      		if(ajax.readyState == 4 && ajax.status == 200) {
+      			if(ajax.responseText == "success"){
+      				$("#contact-form").fadeOut();
+              $("#success").fadeIn("slow");
+      			} else {
+      				_("error").innerHTML = ajax.responseText;
+              _("error").className += " show";
+      				_("mybtn").disabled = false;
+      			}
+      		}
+      	}
+      	ajax.send( formdata );
+      }
+    </script>
+  </head>
+  <body class="contact-background">
+    <header>
+      <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="move-right">
+          <a href="index.html" class="head-link">Home</a>
+          <a href="about.html" class="head-link">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Areas of Practice</button>
+            <div class="dropdown-content">
+              <a href="about.html#labour-law">Labour Law</a>
+              <a href="about.html#employment-law">Employment Law</a>
+              <a href="about.html#real-estate-law">Real Estate Law</a>
+              <a href="about.html#wills-estates">Wills & Estates</a>
+            </div>
+          </div>
+          <div class="dropdown-small">
+            <button onclick="myFunction()" class="dropbtn-small">Areas of Practice <span>+</span></button>
+            <div id="myDropdown" class="dropdown-content-small">
+              <a href="about.html#labour-law">Labour Law</a>
+              <a href="about.html#employment-law">Employment Law</a>
+              <a href="about.html#real-estate-law">Real Estate Law</a>
+              <a href="about.html#wills-estates">Wills & Estates</a>
+            </div>
+          </div>
+          <a href="about.html#location">Location</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="mobile-navbar">
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="mobile-dropdown">
+          <button onclick="mobileFunction()" class="mobile-dropbtn">
+            <div class="mobile-rectangle"></div>
+            <div class="mobile-rectangle"></div>
+            <div class="mobile-rectangle"></div>
+          </button>
+          <div id="myMobileDropdown" class="mobile-dropdown-content">
+            <a href="index.html" class="head-link">Home</a>
+            <a href="about.html" class="head-link">About</a>
+            <div class="dropdown-small">
+              <button onclick="myMobileFunction()" class="mobile-dropbtn-small">Areas of Practice <span>+</span></button>
+              <div id="myMobileDropdownSmall" class="mobile-dropdown-content-small">
+                <a href="about.html#labour-law">Labour Law</a>
+                <a href="about.html#employment-law">Employment Law</a>
+                <a href="about.html#real-estate-law">Real Estate Law</a>
+                <a href="about.html#wills-estates">Wills & Estates</a>
+              </div>
+            </div>
+            <a href="about.html#location">Location</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="contact-main">
+      <div class="contact-top">
+        <div class="contact-main-image">
+          <h1>Contact</h2>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-info-margin">
+          <h2>Contact Info:</h2>
+          <p>
+            84 Worsley Street<br />Barrie, Ontario<br />L4M 1L8
+          </p>
+          <p>
+            Phone: (705) 725-1769<br />Fax: (705) 725-1772<br />Email: <a class="contact-info-link" href="mailto:helentascona@rogers.com">helentascona@rogers.com</a>
+          </p>
+        </div>
+      </div>
+      <div id="success">
+        <p>
+          Success!
+        </p>
+        <img src="images/checkmark.png" />
+      </div>
+      <div id="contact-form" class="contact-box">
+        <p id="error"></p>
+        <h1>Contact Us</h1>
+        <p class="contact-text">
+          We'll try and respond as soon as possible
+        </p>
+        <form id="my_form" onsubmit="submitForm(); return false;">
+          <p><input id="n" placeholder="Full Name" type="text" required></p>
+          <p><input id="e" placeholder="Email Address" type="email" required></p>
+          <p><input id="s" placeholder="Subject" type="text" required></p>
+          <textarea id="m" placeholder="Write your message here" type="text" required></textarea>
+          <p><input id="mybtn" type="submit" value="Submit"><span id="status"></span></p>
+        </form>
+      </div>
+    </main>
+    <footer class="contact-footer">
+      <div>
+        <p>
+          &copy
+          <span id="copyright">
+          </span>
+          Joseph N Tascona Law Firm
+        </p>
+      </div>
+    </footer>
+    <script>
+      function mobileFunction() {
+        document.getElementById("myMobileDropdown").classList.toggle("show");
+        var a = document.getElementsByClassName("contact-main")[0];
+        if (a.classList.contains("move-down4")) {
+          a.classList.toggle("move-down3");
+          a.classList.remove("move-down4");
+          document.getElementById("myMobileDropdownSmall").classList.remove("show");
+        } else {
+          a.classList.toggle("move-down3");
+        }
+      }
+
+      function myMobileFunction() {
+        document.getElementById("myMobileDropdownSmall").classList.toggle("show");
+        document.getElementsByClassName("contact-main")[0].classList.toggle("move-down4");
+      }
+      window.onclick = function(event) {
+        if (!(event.target.matches('.mobile-rectangle') || event.target.matches('.dropbtn-small') || event.target.matches('.mobile-dropbtn-small'))) {
+          var a = document.getElementsByClassName("contact-main")[0];
+          if (a.classList.contains("move-down3")) {
+            a.classList.remove("move-down3");
+          }
+          var dropdowns = document.getElementsByClassName("mobile-dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+          var dropdowns1 = document.getElementsByClassName("dropdown-content-small");
+          var j;
+          for (j = 0; j < dropdowns1.length; j++) {
+            var openDropdown1 = dropdowns1[j];
+            if (openDropdown1.classList.contains('show')) {
+              openDropdown1.classList.remove('show');
+            }
+          }
+          if (a.classList.contains("move-down4")) {
+            a.classList.remove("move-down4");
+          }
+          var dropdowns2 = document.getElementsByClassName("mobile-dropdown-content-small");
+          var x;
+          for (x = 0; x < dropdowns2.length; x++) {
+            var openDropdown2 = dropdowns2[x];
+            if (openDropdown2.classList.contains('show')) {
+              openDropdown2.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1621 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.75;
+  height: 80px;
+  z-index: 1;
+}
+
+.move-right {
+  float: right;
+  margin-right: 12px;
+}
+
+.mobile-navbar {
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.75;
+  height: 80px;
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+}
+
+.mobile-navbar a img {
+  width: 120px;
+  margin: auto;
+  margin-left: 0px;
+  text-align: center;
+  margin-top: 0px
+}
+
+.mobile-dropdown {
+  width: 100%;
+  margin: auto;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.mobile-rectangle {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-top: 2px;
+}
+
+.mobile-dropdown-content {
+  display: none;
+  margin: auto;
+  margin-top: 6px;
+  background-color: white;
+  width: 100%;
+}
+
+.mobile-dropdown-content a {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 14px;
+}
+
+.mobile-dropbtn {
+  background-color: black;
+  border: 1px solid transparent;
+}
+
+.mobile-dropbtn-small {
+  margin-left: 0px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-top: 1px solid transparent;
+  font-size: 14px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.mobile-dropdown-content-small {
+  display: none;
+  width: 100%;
+}
+
+.mobile-dropdown-content-small a {
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  width: 100%;
+  background-color: #DCDCDC;
+}
+
+.move-down1 {
+  margin-top: 171px;
+}
+
+.move-down2 {
+  margin-top: 279px;
+}
+
+.move-down3 {
+  margin-top: 171px;
+}
+
+.move-down4 {
+  margin-top: 279px;
+}
+
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #33AFFF;
+}
+
+.dropbtn {
+    color: white;
+    background-color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #e0e0e0;
+  min-width: 128px;
+  text-align: left;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #33AFFF;
+}
+
+.navbar div {
+  text-align: center;
+  font-size: 16px;
+}
+
+.navbar a img {
+  float: left;
+  padding: 0px 20px;
+  margin: 0px;
+  margin-top: -30px;
+  width: 175px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+main {
+  margin-top: 35px;
+}
+
+.imageSlideHolder {
+  margin-top: -35px;
+}
+
+.mySlides {
+  width: 100%;
+  height: 580px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.shadow {
+  bottom: 0;
+  position: absolute;
+  height: 75px;
+  background-color: black;
+  opacity: 0.7;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.shadow p {
+    color: white;
+    font-size: 25px;
+    float: left;
+    margin: auto;
+    margin-top: 22px;
+    margin-left: 275px;
+}
+
+#image1 {
+  background-image: url("images/alvaro-serrano-133360-unsplash.jpg");
+  background-size: cover;
+}
+
+#image2 {
+  background-image: url("images/mari-helin-tuominen-38313-unsplash.jpg");
+  background-size: cover;
+}
+
+#image3 {
+  background-image: url("images/thomas-martinsen-2443-unsplash.jpg");
+  background-size: cover;
+}
+
+
+footer {
+  height: 80px;
+  background-color: #404040;
+}
+
+footer p {
+  font-weight: 100;
+}
+
+footer div {
+  color: white;
+  padding-top: 12px;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.image-link {
+  position: abosolute;
+  margin-left: 375px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.parent {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  width: 250px;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.child img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -3px;
+  transition: all .5s;
+  z-index: 1;
+}
+
+.child p {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.child img:hover {
+  opacity: 0.75;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.info {
+  position: absolute;
+  margin-left: 60px;
+  width: 275px;
+  opacity: 0.7;
+  line-height: 1.25;
+  margin-top: -20px;
+  font-weight: 100;
+}
+
+.infoSlider {
+  width: 100%;
+}
+
+.infoSlider a {
+  text-decoration: none;
+  color: #33AFFF;
+}
+
+.infoSlider a:hover {
+  color: black;
+}
+
+.dot-container1 {
+  width:200px;
+  position: absolute;
+  left: 0;
+  margin-bottom: -50px;
+  padding-left: 50px;
+  text-align: center;
+  height: 50px;
+  margin: auto;
+  margin-top: 220px;
+}
+
+.circle1 {
+  border: 1px solid #404040;
+  border-radius: 100%;
+  background-color: white;
+  width:8px;
+  height: 8px;
+  display: inline-block;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.circle1:hover {
+  background-color: #404040;
+}
+
+.dot-container {
+  width:200px;
+  text-align: center;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.circle {
+  border: 1px solid #404040;
+  border-radius: 100%;
+  background-color: white;
+  width:15px;
+  height: 15px;
+  display: inline-block;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.filled {
+  background-color: #404040;
+}
+
+.circle:hover {
+  background-color: #404040;
+}
+
+.conatact-image {
+  width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.conatact-image img {
+  width: 100%;
+  height: 250px;
+}
+
+.about {
+  width: 1000px;
+  margin-left: 100px;
+  margin-top: 75px;
+  position: relative;
+}
+
+.about h2 {
+  opacity: 0.8;
+  text-align: center;
+}
+
+.about p {
+  opacity: 0.7;
+  line-height: 1.5
+}
+
+.joe {
+  position: absolute;
+  top: 0;
+  margin-top: -40px;
+  margin-left: 1030px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+#area-of-practice {
+  margin-top: 75px;
+}
+
+#area-of-practice p {
+  opacity: 0.7;
+  line-height: 1.5;
+  width: 1000px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+#location {
+  margin-bottom: 570px;
+}
+
+.location {
+  margin-top: 82px;
+  width: 600px;
+}
+
+.address {
+  width: 400px;
+  margin-top: 82px;
+  background-color: #404040;
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+  font-weight: lighter;
+}
+
+.address h2 {
+  font-weight: lighter;
+}
+
+.address img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.slid-top {
+  margin-top: -35px;
+}
+
+.slid-holder {
+  height: 639px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/janko-ferlic-174927-unsplash.jpg");
+}
+
+.slid-holder h1 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  top: 35%;
+  position: absolute;
+  font-size: 70px;
+  font-weight: 100;
+  color: white;
+  margin: auto;
+}
+
+.area-of-practice-image {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/claire-anderson-60670-unsplash.jpg");
+}
+
+.area-of-practice-image h2 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  top: 40%;
+  position: relative;
+  width: 460px;
+  margin-left: 445px;
+}
+
+.labour-law-image {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/davide-cantelli-153517-unsplash.jpg");
+}
+
+.labour-law-image h2 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  top: 40%;
+  position: relative;
+  width: 322px;
+  margin-left: 535px;
+}
+
+.employment-law-image {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/joao-silas-72563-unsplash.jpg");
+}
+
+.employment-law-image h2 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  top: 40%;
+  position: relative;
+  width: 465px;
+  margin-left: 465px;
+}
+
+.real-estate-law-image {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/rob-bye-325768-unsplash.jpg");
+}
+
+.real-estate-law-image h2 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  top: 40%;
+  position: relative;
+  width: 432px;
+  margin-left: 470px;
+}
+
+.wills-estates-image {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/jeanne-rouillard-43967-unsplash.jpg");
+}
+
+.wills-estates-image h2 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  top: 40%;
+  position: relative;
+  width: 395px;
+  margin-left: 490px;
+}
+
+.location-image {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/lakefront.jpg");
+}
+
+.location-image h2 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  top: 40%;
+  position: relative;
+  width: 230px;
+  margin-left: 570px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.contact-background {
+  background-color: #4682b4;
+}
+
+.contact-top {
+  margin-top: -35px;
+  margin-bottom: 35px;
+}
+
+.contact-main-image {
+  height: 639px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/maarten-van-den-heuvel-73123-unsplash.jpg");
+}
+
+.contact-main-image h1 {
+  background-color: black;
+  padding: 30px;
+  opacity: 0.8;
+  top: 35%;
+  position: absolute;
+  font-size: 70px;
+  font-weight: 100;
+  color: white;
+  margin: auto;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 30px;
+  margin-top: -355px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+#e {
+  float: right;
+  margin-top: -40px;
+}
+
+.contact-box input {
+  width: 180px;
+  font-size: 16px;
+}
+
+.contact-box textarea {
+  width: 400px;
+  height: 150px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+}
+
+#mybtn {
+  background-color: #4682b4;
+  color: white;
+}
+
+#mybtn:hover {
+  background-color: #33AFFF;
+}
+
+#status {
+  margin-left: 25px;
+}
+
+.contact-box h1 {
+  text-align: left;
+}
+
+.contact-info {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  width: 220px;
+}
+
+.contact-footer {
+  margin-top: 180px;
+}
+
+#error {
+  color: red;
+  margin-left: 38px;
+  font-size: 16px;
+  width: 400px;
+  height: 30px;
+  display: none;
+}
+
+#success {
+  width: 270px;
+  height: 270px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+  margin-top: 35px;
+  display: none;
+}
+
+#success p {
+  color: #499B35;
+  font-size: 25px;
+  margin-left: 82px;
+  margin-top: 57px;
+}
+
+#success img {
+  width: 125px;
+  margin-left: 82px;
+}
+
+.contact-info-link {
+  text-decoration: none;
+  color: #4682b4;
+}
+.contact-info-link:hover {
+  color: #33AFFF;
+}
+
+@media (min-width: 320px) {
+  .contact-main-image {
+    background-attachment: inherit;
+    margin-top: -35px;
+    height: 400px;
+  }
+  .contact-main-image h1 {
+    position: relative;
+    width: 100px;
+    font-size: 30px;
+  }
+  .slid-holder {
+    background-attachment: inherit;
+    margin-top: -35px;
+    height: 400px;
+  }
+  .slid-holder h1 {
+    position: relative;
+    width: 100px;
+    font-size: 30px;
+  }
+  .home {
+    min-width: 100%;
+  }
+  .books {
+    min-width: 100%;
+  }
+  .contact-background {
+    min-width: 100%;
+  }
+  .navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .info {
+    display: none;
+  }
+  .mySlides {
+    zoom: 0.45;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+  .dot-container1 {
+    display: none;
+  }
+  .parent {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+  }
+  .parent1 {
+    margin-top: 0px;
+  }
+  .image-link {
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+    margin-top: -55px;
+  }
+  .shadow p {
+    margin-left: 40px;
+  }
+  body {
+    min-width: 631px;
+  }
+  .navbar a img {
+    margin-left: -25px;
+  }
+  .navbar a {
+    padding: 30px 6px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .dropbtn-small {
+      color: white;
+      background-color: black;
+      padding: 16px 8px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 9px;
+      margin-bottom: 18px;
+  }
+
+  .dropdown-small {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+  }
+
+  .dropdown-content-small {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      margin-top: -2px;
+      right: 0%;
+  }
+
+  .dropdown-content-small a {
+      color: black;
+      padding: 16px 8px;
+      text-decoration: none;
+      display: block;
+      float: left;
+  }
+
+  .dropbtn-small span {
+   font-size: 20px;
+   margin-left: 5px;
+  }
+
+  .dropdown-content-small a:hover {
+    background-color: #e0e0e0;
+    min-width: 145px;
+    text-align: left;
+    color: black;
+  }
+
+  .dropdown-small:hover .dropbtn-small {
+      color: #33AFFF;
+  }
+  .show {
+    display: inline-block;
+  }
+  .contact-info {
+    width: 220px;
+    margin-top: -90px;
+    margin: auto;
+  }
+  .contact-info-margin {
+    margin-left: 0px;
+  }
+  .contact-info-margin p {
+    font-size: 14px;
+  }
+  .contact-box {
+    width: 220px;
+    margin: auto;
+    margin-top: 35px;
+  }
+  .contact-box p {
+    font-size: 14px;
+  }
+  .contact-box input {
+    width: 215px;
+    font-size: 14px;
+  }
+  .contact-box textarea {
+    width: 215px;
+    font-size: 14px;
+  }
+  #e {
+    float: none;
+  }
+  .contact-footer {
+    margin-top: 35px;
+  }
+  #error {
+    width: 220px;
+    margin: auto;
+  }
+  #success {
+    width: 200px;
+    height: 200px;
+  }
+  #success p {
+    font-size: 20px;
+    margin-left: 62px;
+    margin-top: 47px;
+  }
+
+  #success img {
+    width: 75px;
+    margin-left: 72px;
+  }
+  .joe {
+    display: none;
+  }
+  .about {
+    width: 95%;
+    margin: auto;
+    margin-top: 35px;
+  }
+  .about p {
+    font-size: 12px;
+  }
+  #area-of-practice {
+    margin-top: 35px;
+  }
+  .labour-law-image {
+    height: 400px;
+    background-attachment: inherit;
+  }
+  .labour-law-image h2 {
+    margin: auto;
+    width: 160px;
+    font-size: 30px;
+  }
+  .employment-law-image {
+    height: 400px;
+    background-attachment: inherit;
+    margin-top: 35px;
+  }
+  .employment-law-image h2 {
+    margin: auto;
+    width: 240px;
+    font-size: 30px;
+  }
+  .real-estate-law-image {
+    height: 400px;
+    background-attachment: inherit;
+    margin-top: 35px;
+  }
+  .real-estate-law-image h2 {
+    margin: auto;
+    width: 220px;
+    font-size: 30px;
+  }
+  .wills-estates-image {
+    height: 400px;
+    background-attachment: inherit;
+    margin-top: 35px;
+  }
+  .wills-estates-image h2 {
+    margin: auto;
+    width: 200px;
+    font-size: 30px;
+  }
+  .location-image {
+    height: 400px;
+    background-attachment: inherit;
+    margin-top: 35px;
+  }
+  .location-image h2 {
+    margin:auto;
+    width: 110px;
+    font-size: 30px;
+  }
+  #labour-law p {
+    font-size: 12px;
+    width: 95%;
+    margin: auto;
+    margin-top: 35px;
+  }
+  #employment-law p {
+    font-size: 12px;
+    width: 95%;
+    margin: auto;
+    margin-top: 35px;
+  }
+  #real-estate-law p {
+    font-size: 12px;
+    width: 95%;
+    margin:auto;
+    margin-top: 35px;
+  }
+  #wills-estates p {
+    font-size: 12px;
+    width: 95%;
+    margin:auto;
+    margin-top: 35px;
+  }
+  #location {
+    height: 365px;
+  }
+  .location {
+    margin:auto;
+    width: 80%;
+    margin-top: 35px;
+  }
+  #map {
+    height: 200px;
+  }
+  .address {
+    margin-top: 22px;
+    width: 70%;
+    height: 200px;
+  }
+  .address-margin {
+    text-align: center;
+  }
+  .address-margin p {
+    font-size: 12px;
+  }
+  .address-margin h2 {
+    font-size: 18px;
+  }
+  .address-margin img {
+    width: 200px;
+    height: 100px;
+  }
+  footer {
+    margin-top: -45px;
+  }
+  footer p {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .mySlides:first-child {
+    display: block;
+  }
+  .mySlides {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-main-image {
+    height: 549px;
+    background-attachment: fixed;
+    margin-top: -35px;
+  }
+  .contact-main-image h1 {
+    padding: 30px;
+    opacity: 0.8;
+    width: 250px;
+    font-size: 70px;
+    margin: auto;
+  }
+  .contact-box {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 400px;
+  }
+  .contact-box p {
+    font-size: 16px;
+  }
+  .contact-box input {
+    width: 190px;
+    font-size: 16px;
+  }
+  .contact-box textarea {
+    width: 390px;
+    font-size: 16px;
+  }
+  #e {
+    float: right;
+  }
+  .contact-footer {
+    margin-top: 640px;
+  }
+  #error {
+    width: 390px;
+  }
+  #success p {
+    font-size: 30px;
+    margin-left: 77px;
+    margin-top: 47px;
+  }
+
+  #success img {
+    width: 125px;
+    margin-left: 77px;
+  }
+  .slid-holder {
+    background-attachment: fixed;
+    margin-top: -35px;
+    height: 555px;
+  }
+  .slid-holder h1 {
+    padding: 30px;
+    opacity: 0.8;
+    font-size: 70px;
+    width: 180px;
+  }
+  main {
+    margin-top: 115px;
+  }
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .parent1 {
+    margin-top: 50px;
+  }
+  footer {
+    margin-top: -42px;
+  }
+  footer p {
+    font-size: 16px;
+    padding-top: 4px;
+  }
+  .mySlides {
+    zoom: 1;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar a img {
+    margin-left: -15px;
+  }
+  .navbar a {
+    padding: 30px 8px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .dropbtn-small {
+      color: white;
+      background-color: black;
+      padding: 16px 8px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 9px;
+      margin-bottom: 18px;
+  }
+
+  .dropdown-small {
+      position: relative;
+      display: inline-block;
+      width: 165px;
+  }
+
+  .dropdown-content-small {
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      margin-top: -2px;
+      right: 0%;
+      display: none;
+  }
+
+  .dropdown-content-small a {
+      color: black;
+      padding: 16px 8px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropbtn-small span {
+   font-size: 20px;
+   margin-left: 5px;
+  }
+
+  .dropdown-content-small a:hover {
+    background-color: #e0e0e0;
+    min-width: 145px;
+    text-align: left;
+    color: black;
+  }
+
+  .dropdown-small:hover .dropbtn-small {
+      color: #33AFFF;
+  }
+  .shadow p {
+    margin-left: 50px;
+  }
+  .info {
+    display: none;
+  }
+  .dot-container1 {
+    display: none;
+  }
+  .image-link {
+    margin-left: 7px;
+    margin-right: 0px;
+    margin-top: -15px;
+  }
+  .parent {
+    width: 48.2%;
+    margin-left: 7px;
+    margin-top: 7px;
+    height: auto;
+  }
+  .contact-info {
+    width: 400px;
+    margin: auto;
+    margin-top: 35px;
+  }
+  .contact-info-margin {
+    margin-left: 90px;
+  }
+  .contact-box {
+    margin: auto;
+    margin-top: 35px;
+  }
+  .contact-footer {
+    margin-top: 35px;
+  }
+  #success {
+    width: 275px;
+    height: 275px;
+  }
+  .joe {
+    display: none;
+  }
+  .about {
+    width: 80%;
+    margin-top: 75px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  #area-of-practice {
+    margin-top: 75px;
+  }
+  #area-of-practice p {
+    margin-top: 75px;
+    font-size: 14px;
+    width: 80%;
+  }
+  .labour-law-image {
+    background-attachment: fixed;
+    height: 500px;
+  }
+  .labour-law-image h2 {
+    width: 322px;
+    font-size: 60px;
+  }
+  .employment-law-image {
+    background-attachment: fixed;
+    height: 500px;
+    margin-top: 75px;
+  }
+  .employment-law-image h2 {
+    width: 465px;
+    font-size: 60px;
+  }
+  .real-estate-law-image {
+    background-attachment: fixed;
+    height: 500px;
+    margin-top: 75px;
+  }
+  .real-estate-law-image h2 {
+    width: 435px;
+    font-size: 60px;
+  }
+  .wills-estates-image {
+    background-attachment: fixed;
+    height: 500px;
+    margin-top: 75px;
+  }
+  .wills-estates-image h2 {
+    width: 395px;
+    font-size: 60px;
+  }
+  .location {
+    height: 500px;
+    margin-top: 75px;
+  }
+  .location-image {
+    height: 500px;
+    margin-top: 75px;
+    background-attachment: fixed;
+  }
+  .location-image h2 {
+    width: 230px;
+    font-size: 60px;
+  }
+  #location {
+    height: 1000px;
+  }
+  .location {
+    margin-left: 95px;
+  }
+  #map {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 75px;
+  }
+  .address {
+    width: 64.5%;
+    height: 400px;
+    margin-top: -45px;
+  }
+  .address-margin h2 {
+    padding-top: 15px;
+    font-size: 27.5px;
+  }
+  .address-margin p {
+    font-size: 16px;
+  }
+  .address-margin img {
+    width: 400px;
+    height: auto;
+  }
+  .show {
+    display: inline-block;
+  }
+}
+
+@media (min-width:1024px) {
+  .move-right {
+    margin-right: 40px;
+  }
+  .location {
+    margin-left: 165px;
+  }
+  .contact-info p {
+    font-size: 14px;
+  }
+  #map {
+    width: 100%;
+    height: 370px;
+    margin: 0px;
+  }
+
+  .infoSlider:first-child {
+    display: block;
+  }
+
+  .infoSlider {
+    margin-top: -20px;
+    display: none;
+  }
+
+  .address {
+    width: 400px;
+    height: 300px;
+    float: right;
+    padding: 30px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin-right: 38px;
+    margin-top: -495px;
+  }
+  .address h2 {
+    font-size: 25px;
+    float: none;
+    margin-top: 0px;
+  }
+
+  .address img {
+    width: 290px;
+    float: none;
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .address p {
+    float: none;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    margin-top: 0px;
+  }
+  .contact-info {
+    float: left;
+    margin-left: 75px;
+    width: 220px;
+  }
+  .contact-info-margin {
+    margin-left: 0px;
+  }
+  .contact-box {
+    margin-top: 69px;
+    margin-right: 255px;
+  }
+  .contact-footer {
+    margin-top: 35px;
+  }
+  .info {
+    display: block;
+  }
+  .dot-container1 {
+    display: block;
+  }
+  .image-link {
+    margin-left: 33px;
+  }
+  .parent {
+    width: 250px;
+    height: 167px;
+  }
+  .dropdown-small {
+    display: none;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  .navbar a {
+    padding: 31px 10px;
+  }
+  .navbar a img {
+    margin-left: 15px;
+    max-height: 79px;
+  }
+  .dropbtn {
+    padding: 16px 10px;
+  }
+  .dropdown-content {
+    min-width: 120px;
+  }
+  .dropdown-content a:hover {
+    min-width: 123px;
+  }
+  .dropdown-content a {
+    padding: 16px 10px;
+  }
+  .shadow p {
+    margin-left: 55px;
+  }
+  .info {
+    margin-top: 40px;
+    margin-left: 70px;
+  }
+  .dot-container1 {
+    margin-top: 280px;
+  }
+  .image-link {
+    margin-left: 435px;
+  }
+  .labour-law-image h2 {
+    margin: auto;
+  }
+  .slid-holder {
+    height: 765px;
+  }
+  .slid-holder h1 {
+    margin: auto;
+    margin-top: 60px;
+  }
+  .employment-law-image h2 {
+    margin: auto;
+  }
+  .real-estate-law-image h2 {
+    margin: auto;
+  }
+  .wills-estates-image h2 {
+    margin: auto;
+  }
+  .location-image h2 {
+    margin: auto;
+  }
+  #map {
+    margin-left: -125px;
+    width: 450px;
+  }
+  .contact-box {
+    margin-right: 100px;
+    margin-top: 35px;
+  }
+  .about {
+    width: 600px;
+    margin-left: 85px;
+  }
+  .joe {
+    margin-left:650px;
+    margin-top: -25px;
+    display: block;
+  }
+  #employment-law {
+    margin-top: 50px;
+  }
+  #real-estate-law {
+    margin-top: 50px;
+  }
+  #wills-estates {
+    margin-top: 50px;
+  }
+  #location {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  #area-of-practice p {
+    width: 875px;
+    margin-left: 80px;
+  }
+  #success {
+    margin-right: 200px;
+  }
+}
+
+@media (min-width:1440px) {
+  .move-right {
+    margin-right: 100px;
+  }
+  #success {
+    margin-right: 350px;
+  }
+  .infoSlider {
+    margin-top: 0px;
+  }
+  .navbar a {
+    padding: 30px 20px;
+  }
+  .navbar a img {
+    height: 80px;
+    margin-left: 70px;
+  }
+  .dropbtn {
+    padding: 16px;
+  }
+  .dropdown-content {
+    min-width: 160px;
+  }
+  .dropdown-content a:hover {
+    min-width: 128px;
+  }
+  .dropdown-content a {
+    padding: 16px 16px;
+  }
+  .shadow p {
+    margin-left: 275px;
+  }
+  .info {
+    margin-top: -70px;
+    margin-left: 60px;
+  }
+  .dot-container1 {
+    margin-top: 180px;
+  }
+  .image-link {
+    margin-left: 375px;
+  }
+  .slid-holder {
+    height: 895px;
+  }
+  #location {
+    height: 960px;
+  }
+  #map {
+    width: 500px;
+    margin-left: 0px;
+  }
+  .address {
+    margin-right: 150px;
+    margin-top: -502px;
+    width: 500px;
+  }
+  .contact-box {
+    margin-right: 270px;
+  }
+  .contact-info {
+    margin:auto;
+    margin-left: 270px;
+  }
+  .joe {
+    margin-top: -47px;
+    margin-left: 1030px;
+  }
+  #area-of-practice p {
+    width: 1000px;
+    margin-left: 200px;
+  }
+  .about {
+    width: 1000px;
+    margin-left: 100px;
+  }
+  footer {
+    margin-top: 75px;
+    margin: auto;
+  }
+}
