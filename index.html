@@ -171,6 +171,10 @@
       </div>
     </footer>
     <script>
+      document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
       function mobileFunction() {
         document.getElementById("myMobileDropdown").classList.toggle("show");
         var a = document.getElementsByClassName("index-main")[0];
