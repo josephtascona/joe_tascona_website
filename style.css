@@ -232,17 +232,17 @@ main {
 }
 
 #image1 {
-  background-image: url("images/alvaro-serrano-133360-unsplash.jpg");
+  background-image: url("images/alvara_serano.jpg");
   background-size: cover;
 }
 
 #image2 {
-  background-image: url("images/mari-helin-tuominen-38313-unsplash.jpg");
+  background-image: url("images/mari-helin-tuominen.jpg");
   background-size: cover;
 }
 
 #image3 {
-  background-image: url("images/thomas-martinsen-2443-unsplash.jpg");
+  background-image: url("images/thomas-martinsen.jpg");
   background-size: cover;
 }
 
