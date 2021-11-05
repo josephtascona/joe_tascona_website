@@ -7,34 +7,6 @@
     <meta name="description" content="Contact us for more information, and we will do our best to respond as soon as possible.">
     <link rel="icon" type="image/png" href="images/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      function _(id){ return document.getElementById(id); }
-      function submitForm(){
-      	_("mybtn").disabled = true;
-      	_("status").innerHTML = 'please wait ...';
-      	var formdata = new FormData();
-      	formdata.append( "n", _("n").value );
-      	formdata.append( "e", _("e").value );
-        formdata.append( "s", _("s").value );
-      	formdata.append( "m", _("m").value );
-      	var ajax = new XMLHttpRequest();
-      	ajax.open( "POST", "parser.php" );
-      	ajax.onreadystatechange = function() {
-      		if(ajax.readyState == 4 && ajax.status == 200) {
-      			if(ajax.responseText == "success"){
-      				$("#contact-form").fadeOut();
-              $("#success").fadeIn("slow");
-      			} else {
-      				_("error").innerHTML = ajax.responseText;
-              _("error").className += " show";
-      				_("mybtn").disabled = false;
-      			}
-      		}
-      	}
-      	ajax.send( formdata );
-      }
-    </script>
   </head>
   <body class="contact-background">
     <header>
@@ -107,26 +79,6 @@
             Phone: (705) 725-1769<br />Fax: (705) 725-1772<br />Email: <a class="contact-info-link" href="mailto:helentascona@rogers.com">helentascona@rogers.com</a>
           </p>
         </div>
-      </div>
-      <div id="success">
-        <p>
-          Success!
-        </p>
-        <img src="images/checkmark.png" />
-      </div>
-      <div id="contact-form" class="contact-box">
-        <p id="error"></p>
-        <h1>Contact Us</h1>
-        <p class="contact-text">
-          We'll try and respond as soon as possible
-        </p>
-        <form id="my_form" onsubmit="submitForm(); return false;">
-          <p><input id="n" placeholder="Full Name" type="text" required></p>
-          <p><input id="e" placeholder="Email Address" type="email" required></p>
-          <p><input id="s" placeholder="Subject" type="text" required></p>
-          <textarea id="m" placeholder="Write your message here" type="text" required></textarea>
-          <p><input id="mybtn" type="submit" value="Submit"><span id="status"></span></p>
-        </form>
       </div>
     </main>
     <footer class="contact-footer">
