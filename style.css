@@ -3,6 +3,13 @@ body {
   font-family: sans-serif;
 }
 
+.phone {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -40,7 +47,7 @@ body {
 .mobile-dropdown {
   width: 100%;
   margin: auto;
-  margin-top: -10px;
+  margin-top: -8px;
   cursor: pointer;
 }
 
@@ -724,6 +731,10 @@ h1 {
 }
 
 @media (min-width: 320px) {
+  .phone img {
+    width: 40px;
+  }
+  
   .contact-main-image {
     background-attachment: inherit;
     margin-top: -35px;
@@ -736,7 +747,7 @@ h1 {
   }
   .slid-holder {
     background-attachment: inherit;
-    margin-top: -35px;
+    margin-top: -37px;
     height: 400px;
   }
   .slid-holder h1 {
@@ -1020,6 +1031,10 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .phone img {
+    width: 60px;
+  }
+
   .contact-main-image {
     height: 549px;
     background-attachment: fixed;
@@ -1117,7 +1132,7 @@ h1 {
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
-      margin-top: -2px;
+      margin-top: 78px;
       right: 0%;
       display: none;
   }
@@ -1275,6 +1290,10 @@ h1 {
 }
 
 @media (min-width:1024px) {
+  .phone img {
+    width: 80px;
+  }
+
   .move-right {
     margin-right: 40px;
   }
@@ -1450,6 +1469,10 @@ h1 {
 }
 
 @media (min-width:1440px) {
+  .phone img {
+    width: 100px;
+  }
+
   .move-right {
     margin-right: 100px;
   }
@@ -1527,6 +1550,5 @@ h1 {
   }
   footer {
     margin-top: 75px;
-    margin: auto;
   }
 }
