@@ -1493,6 +1493,7 @@ h1 {
   }
   .dropdown-content {
     min-width: 160px;
+    margin-top: 0px;
   }
   .dropdown-content a:hover {
     min-width: 128px;
